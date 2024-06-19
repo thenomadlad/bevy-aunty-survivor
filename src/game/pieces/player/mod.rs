@@ -3,8 +3,5 @@ use bevy::app::Plugin;
 pub struct PlayerPlugin;
 
 impl Plugin for PlayerPlugin {
-    fn build(&self, app: &mut bevy::prelude::App) {
-        todo!()
-    }
+    fn build(&self, app: &mut bevy::prelude::App) {}
 }
-

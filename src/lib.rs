@@ -3,7 +3,7 @@ pub mod menu;
 
 use bevy::prelude::*;
 
-use crate::{game::GamePlayPlugin, menu::plugin::MenuPlugin};
+use crate::{game::GamePlayPlugin, menu::MenuPlugin};
 
 #[derive(States, Default, Debug, Hash, PartialEq, Eq, Clone)]
 enum ApplicationState {

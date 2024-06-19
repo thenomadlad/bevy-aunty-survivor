@@ -13,6 +13,7 @@ opt-level = 3
 
 [dependencies]
 bevy = { version = "0.13.2", features = ["dynamic_linking"] }
+bevy_ecs_tilemap = "0.12.0"
 bevy_rapier2d = { version = "0.26.0", features = [
   "simd-stable",
   "debug-render-2d",
