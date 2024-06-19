@@ -1,6 +1,20 @@
 [package]
-name = "bevy-aunty-survivor"
+name = "rust-aunty-survivor"
 version = "0.1.0"
 edition = "2021"
 
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
 [dependencies]
+bevy = { version = "0.13.2", features = ["dynamic_linking"] }
+bevy_rapier2d = { version = "0.26.0", features = [
+  "simd-stable",
+  "debug-render-2d",
+] }
+rand = "0.8.5"
